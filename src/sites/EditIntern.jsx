@@ -17,6 +17,7 @@ const EditIntern = () => {
   const [errors, setError] = useState({
     name: "",
     email: "",
+    internshipStart: "",
     internshipEnd: "",
   });
   const [submiting, setSubmiting] = useState(false)
@@ -32,13 +33,17 @@ const EditIntern = () => {
 
   const validateForm = (e) => {
     const error = {}
-    if (data.name === "") {
+    if (!data.name.trim()) {
      error.name = "This field is required";
     }
 
     const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if (!regex.test(data.email)) {
       error.email = "Invalid email" ;
+    }
+    if(!data.internshipStart.trim())
+    {
+      error.internshipStart = "This field is required"
     }
     
 
@@ -68,6 +73,7 @@ const EditIntern = () => {
     errors.internshipStart ? internshipStartInput.classList.add('invalid') : internshipStartInput.classList.remove('invalid')
     errors.internshipEnd ? internshipEndInput.classList.add('invalid') : internshipEndInput.classList.remove('invalid')
 
+    console.log(errors.name)
 
     if(Object.keys(errors).length === 0 && submiting)  {
      
@@ -136,6 +142,9 @@ const EditIntern = () => {
               name="internshipStart"
               id='internshipStart'
             />
+            <label htmlFor="internshipStart" className="error">
+              {errors.internshipStart}
+            </label>
           </div>
           <div className="date">
             <label>Internship End*</label>
