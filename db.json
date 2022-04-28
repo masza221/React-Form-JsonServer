@@ -2,38 +2,38 @@
   "interns": [
     {
       "id": 1,
-      "name": "Kamil Kowalczyk 1",
-      "email": "birdramsey@nimon.com",
-      "internshipStart": "2021-07-01T00:00",
-      "internshipEnd": "2021-09-30T00:00"
+      "name": "masza2212",
+      "email": "masza221@gmail.com",
+      "internshipStart": "2021-07-01",
+      "internshipEnd": "2021-07-30"
     },
     {
       "id": 2,
       "name": "Lillian Burgess",
       "email": "lillianburgess@luxuria.com",
-      "internshipStart": "2021-07-01T00:00",
-      "internshipEnd": "2021-09-30T00:00"
+      "internshipStart": "2021-07-01",
+      "internshipEnd": "2021-09-30"
     },
     {
       "id": 3,
-      "name": "Kristie Cole",
-      "email": "kristiecole@quadeebo.com",
-      "internshipStart": "2020-07-01T00:00",
-      "internshipEnd": "2020-09-30T00:00"
+      "name": "Bird Ramsey",
+      "email": "masza221@gmail.com",
+      "internshipStart": "2020-07-01",
+      "internshipEnd": "2020-09-30"
     },
     {
       "id": 4,
       "name": "Leonor Cross",
       "email": "leonorcross@gronk.com",
-      "internshipStart": "2020-07-01T00:00",
-      "internshipEnd": "2020-09-30T00:00"
+      "internshipStart": "2020-07-01",
+      "internshipEnd": "2020-09-30"
     },
     {
       "id": 5,
-      "name": "Marsh Mccall",
-      "email": "marshmccall@ultrimax.com",
-      "internshipStart": "2020-07-01T00:00",
-      "internshipEnd": "2020-09-30T00:00"
+      "name": "Marsh Kowalczyk",
+      "email": "marshmccall@ultrimax.co",
+      "internshipStart": "2020-07-01",
+      "internshipEnd": "2020-09-30"
     }
   ]
 }

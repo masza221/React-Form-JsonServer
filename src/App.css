@@ -1,7 +1,4 @@
-
-
-*
-{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -9,11 +6,11 @@
 .App {
   height: 100vh;
 }
-.container{
+.container {
   position: relative;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   box-sizing: unset;
   min-width: 200px;
   padding: 50px;
@@ -21,33 +18,37 @@
   max-width: 400px;
   flex-wrap: wrap;
   flex-direction: column;
-  background-color:#F7F7F7; 
+  background-color: #f7f7f7;
 }
-a{
+a {
   text-decoration: none;
   color: #000;
 }
 .container > h1 {
-  padding:0px 0px 30px 0px;
+  padding: 0px 0px 30px 0px;
 }
 .container form {
   display: flex;
+  gap: 15px;
   flex-direction: row;
   flex-wrap: wrap;
   font-size: 1.1rem;
 }
-.container input[type=text] {
+.container input[type="text"] {
   width: 100%;
   padding: 15px;
   margin: 10px 0px 10px 0px;
 }
-.container input[type=datetime-local] {
-  width: 90%;
+.container input[type="text"]:invalid {
+  border: 1px solid red;
+}
+.container input[type="date"] {
+  width: 100%;
   padding: 15px;
 }
-.container input[type=submit]{
+.container input[type="submit"] {
   width: 50%;
-  background-color: #222222 ;
+  background-color: #222222;
   padding: 15px;
   color: #fff;
   font-size: 1.2rem;
@@ -56,35 +57,43 @@ a{
 .intern {
   display: flex;
   justify-content: space-between;
-  background-color: #EDEDED;
+  background-color: #ededed;
   align-items: center;
   padding: 30px;
   height: 2vw;
 }
-.intern:nth-child(2n)
-{
-  background-color: #F2F2F2;
+.intern:nth-child(2n) {
+  background-color: #f2f2f2;
 }
-.intern:hover
-{
-  box-shadow:inset 0px 0px 0px 1px #000;
+.intern:hover {
+  box-shadow: inset 0px 0px 0px 1px #000;
 }
 
 .data {
-  width: 90%;
+  width: 100%;
 }
 
 .date {
-  width: 50%;
+  width: 48%;
 }
-.error
-{
+.error {
   color: red;
   font-size: 0.9rem;
-  line-height:200%
+  line-height: 200%;
 }
 .back {
   position: relative;
-  left:-40px;
-  top:-100px;
+  left: -40px;
+  top: -100px;
+}
+.invalid {
+  border: 1px solid red;
+  background: url(./img/error.svg) no-repeat 99%;
+}
+input.invalid[type="date"] {
+  background: url(./img/error.svg) no-repeat 70%;
+  background-size: 15%;
+}
+input[type="date"]:nth-child(2n + 1) {
+  margin-right: 15px;
 }

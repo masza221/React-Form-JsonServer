@@ -18,16 +18,14 @@ const InternList = () => {
     <div className="container">
       <h1>Participants</h1>
       <div className="internList">
-        {" "}
         {interns.map((u) => (
           <div className="intern" key={u.id}>
-            {u.name}{" "}
+            {u.name}
             <NavLink to={`/interns/${u.id}`}>
-              {" "}
               <img width={12} src={pencil} alt="pecil"></img> Edit
             </NavLink>
           </div>
-        ))}{" "}
+        ))}
       </div>
     </div>
   );
